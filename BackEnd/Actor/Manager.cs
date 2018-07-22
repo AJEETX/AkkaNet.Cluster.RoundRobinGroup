@@ -7,7 +7,6 @@
 
     internal class Manager : ReceiveActor, ILogReceive
     {
-        private int officeCounter = 0;
         private int pnrCounter = 0;
 
         public Manager()
@@ -21,7 +20,6 @@
         {
             foreach (var office in officeList)
             {
-                this.officeCounter++;
                 var name = office.ID + office.Data;
                 var supervisor = Context.Child(name);
                 if (supervisor == ActorRefs.Nobody)
@@ -47,13 +45,12 @@
 
                 processor.Tell(new Pnr(pnr));
             }
-
-            this.officeCounter--;
         }
 
         private void Completed(CompletedResponse response)
         {
             this.pnrCounter--;
+            Console.WriteLine($"{pnrCounter}");
             if (this.pnrCounter == 0)
             {
                 Console.WriteLine($"Completed");
