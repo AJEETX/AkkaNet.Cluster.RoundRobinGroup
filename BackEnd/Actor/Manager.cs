@@ -7,6 +7,7 @@
 
     internal class Manager : ReceiveActor, ILogReceive
     {
+        private NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
         private int pnrCounter = 0;
 
         public Manager()
@@ -20,6 +21,7 @@
         {
             foreach (var office in officeList)
             {
+                this.logger.Info(NLog.LogLevel.Info);
                 var name = office.ID + office.Data;
                 var supervisor = Context.Child(name);
                 if (supervisor == ActorRefs.Nobody)
@@ -36,6 +38,7 @@
             Console.WriteLine($"{officePnrList.Counter} WIP {officePnrList.Office.ID} ::: {officePnrList.Office.Data}");
             foreach (var pnr in officePnrList.Pnrs)
             {
+                this.logger.Info(NLog.LogLevel.Info);
                 this.pnrCounter++;
                 var processor = Context.Child(pnr);
                 if (processor == ActorRefs.Nobody)
