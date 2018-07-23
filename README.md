@@ -5,6 +5,6 @@
 
 ## sample akka.net clustering through round robin group
 
-![Travis](https://img.shields.io/travis/AJEETX/AkkaNet.Cluster.RoundRobinGroup.svg) |![GitHub Release Date](https://img.shields.io/github/release-date/ajeetx/AkkaNet.Cluster.RoundRobinGroup.svg)|[![.Net Framework](https://img.shields.io/badge/DotNet-2.0-blue.svg?style=plastic)](https://www.microsoft.com/en-au/download/details.aspx?id=1639) | ![GitHub language count](https://img.shields.io/github/languages/count/ajeetx/AkkaNet.Cluster.RoundRobinGroup.svg) | ![GitHub top language](https://img.shields.io/github/languages/top/ajeetx/AkkaNet.Cluster.RoundRobinGroup.svg) |![GitHub repo size in bytes](https://img.shields.io/github/repo-size/ajeetx/AkkaNet.Cluster.RoundRobinGroup.svg) 
+[![Build Status](https://travis-ci.org/AJEETX/AkkaNet.Cluster.RoundRobinGroup.svg?branch=master)](https://travis-ci.org/AJEETX/AkkaNet.Cluster.RoundRobinGroup) |![GitHub Release Date](https://img.shields.io/github/release-date/ajeetx/AkkaNet.Cluster.RoundRobinGroup.svg)|[![.Net Framework](https://img.shields.io/badge/DotNet-2.0-blue.svg?style=plastic)](https://www.microsoft.com/en-au/download/details.aspx?id=1639) | ![GitHub language count](https://img.shields.io/github/languages/count/ajeetx/AkkaNet.Cluster.RoundRobinGroup.svg) | ![GitHub top language](https://img.shields.io/github/languages/top/ajeetx/AkkaNet.Cluster.RoundRobinGroup.svg) |![GitHub repo size in bytes](https://img.shields.io/github/repo-size/ajeetx/AkkaNet.Cluster.RoundRobinGroup.svg) 
 | ---          | ---        | ---      | ---        | --- | --- |
 
