@@ -59,9 +59,9 @@ akka
 }
 ");
             ClusterSystem = ActorSystem.Create("ClusterSystem", config);
-            var tasker = ClusterSystem.ActorOf(Props.Empty.WithRouter(FromConfig.Instance), "tasker");
+            var routerActor = ClusterSystem.ActorOf(Props.Empty.WithRouter(FromConfig.Instance), "tasker");
 
-            StartActor = ClusterSystem.ActorOf(Props.Create(() => new StartActor(tasker)), "startactor");
+            StartActor = ClusterSystem.ActorOf(Props.Create(() => new StartActor(routerActor)), "startactor");
             StartActor.Tell(new Initiate());
             ClusterSystem.WhenTerminated.Wait();
         }
