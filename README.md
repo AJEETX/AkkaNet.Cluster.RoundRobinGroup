@@ -1,4 +1,4 @@
-# AkkaNet.Cluster.RoundRobinGroup ![GitHub release](https://img.shields.io/github/release/ajeetx/AkkaNet.Cluster.RoundRobinGroup.svg?style=for-the-badge) ![Maintenance](https://img.shields.io/maintenance/yes/2018.svg?style=for-the-badge)
+# AkkaNet.Cluster.RoundRobinGroup ![GitHub release](https://img.shields.io/github/release/ajeetx/AkkaNet.Cluster.RoundRobinGroup.svg?style=for-the-badge) ![Maintenance](https://img.shields.io/maintenance/yes/2019.svg?style=for-the-badge)
 
 
 
